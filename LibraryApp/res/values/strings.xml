@@ -22,5 +22,6 @@
     <string name="title_activity_password_retrieve">PasswordRetrieve</string>
     <string name="btn_pwdr">Retrieve Password</string>
     <string name="title_activity_user_menu">UserMenu</string>
+    <string name="title_activity_book_search">BookSearch</string>
 
 </resources>

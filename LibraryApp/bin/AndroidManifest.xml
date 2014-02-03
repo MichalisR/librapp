@@ -47,6 +47,10 @@ n
             android:name="com.example.libraryapp.UserMenu"
             android:label="@string/title_activity_user_menu" >
         </activity>
+        <activity
+            android:name="com.example.libraryapp.BookSearch"
+            android:label="@string/title_activity_book_search" >
+        </activity>
     </application>
 
 </manifest>

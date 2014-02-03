@@ -21,7 +21,8 @@
         android:layout_below="@+id/welcomeTxt"
         android:layout_marginTop="0dp"
         android:layout_width="200dp"
-        android:text="Search Book" />
+        android:text="Search Book"
+        android:textSize="13dp" />
 
     <Button
         android:id="@+id/manageBtn"
@@ -29,7 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/searchBtn"
         android:layout_marginTop="15dp"
-        android:text="Profile Management" />
+        android:text="Profile Management"
+        android:textSize="13dp" />
 
     <Button
         android:id="@+id/collabBtn"
@@ -37,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/manageBtn"
         android:layout_marginTop="15dp"
-        android:text="Collaborate" />
+        android:text="Collaborate"
+        android:textSize="13dp" />
 
     <Button
         android:id="@+id/logoutBtn"
@@ -47,6 +50,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="18dp"
         android:layout_toRightOf="@+id/collabBtn"
-        android:text="LogOut" />
+        android:text="LogOut"
+        android:textSize="13dp" />
 
 </RelativeLayout>
