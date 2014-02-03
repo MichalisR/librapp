@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class UserMenu extends Activity {
 	
 	private TextView welcome;
-	private Button logout;
+	private Button logout,book_search;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class UserMenu extends Activity {
 		welcome.setText(conc);
 		
 		logout = (Button) findViewById(R.id.logoutBtn);
+		book_search = (Button) findViewById(R.id.searchBtn);
 		
 		//Logout Function
 	    logout.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,17 @@ public class UserMenu extends Activity {
 	             finish();
 	        }
 	    });
+	    
+	    //Book search
+	    book_search.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View arg0) {
+				Intent bsearch = new Intent(getApplicationContext(),BookSearch.class);
+				bsearch.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(bsearch);
+				finish();
+			}
+		});
 	}
 
 	@Override
