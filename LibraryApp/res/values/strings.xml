@@ -24,5 +24,7 @@
     <string name="title_activity_user_menu">UserMenu</string>
     <string name="title_activity_book_search">BookSearch</string>
     <string name="book_search">Book Search</string>
+    <string name="search_label">Books</string>
+    <string name="search_hint">Search Books</string>
 
 </resources>

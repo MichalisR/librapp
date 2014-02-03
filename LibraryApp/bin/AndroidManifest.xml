@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -38,7 +38,7 @@
             android:name="com.example.libraryapp.RegisterScreen"
             android:screenOrientation="portrait" >
         </activity>
-n
+
         <activity
             android:name="com.example.libraryapp.PasswordRetrieve"
             android:screenOrientation="portrait" >
@@ -47,10 +47,13 @@ n
             android:name="com.example.libraryapp.UserMenu"
             android:label="@string/title_activity_user_menu" >
         </activity>
-        <activity
-            android:name="com.example.libraryapp.BookSearch"
-            android:label="@string/title_activity_book_search" >
-        </activity>
+        <activity android:name="com.example.libraryapp.BookSearch" >
+        	<intent-filter>
+            	<action android:name="android.intent.action.SEARCH" />
+        	</intent-filter>
+        	<meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+    	</activity>
     </application>
 
 </manifest>
