@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main" >
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="145dp"
+        android:ems="10"
+        android:hint="@string/firstname" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:ems="10"
+        android:hint="@string/lastname" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp"
+        android:ems="10"
+        android:hint="@string/username" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="265dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="305dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnToLogin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_register" />
+
+    <Button
+        android:id="@+id/btnToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblDate"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/pick_date"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/email"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblDate"
+        android:layout_alignBottom="@+id/lblDate"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/lblDate"
+        android:text=""
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView 
+    	android:id="@+id/register_error" 
+    	android:layout_alignParentLeft="true" 
+    	android:layout_below="@+id/email" 
+    	android:layout_height="56dp" 
+    	android:layout_width="fill_parent" 
+    	android:textColor="#000000"
+    	/>
+
+</RelativeLayout>
